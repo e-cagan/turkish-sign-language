@@ -14,5 +14,5 @@ venv/
 runs/
 dataset/
 weights/
-yolov8n.pt
+yolov8s.pt
 yolo26n.pt
