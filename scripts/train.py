@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # Train the model
     model.train(
         data="dataset/TURK-ISARET-DILI-UYGULAMASI-3/data.yaml",
-        epochs=100,
+        epochs=20,
         batch=16,
         imgsz=640,
         device=device,
