@@ -6,3 +6,7 @@ seaborn
 pandas
 numpy
 python-dotenv
+python-multipart
+fastapi
+uvicorn
+websockets
