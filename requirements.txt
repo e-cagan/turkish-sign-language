@@ -1,0 +1,8 @@
+ultralytics>=8.0.0
+opencv-python
+roboflow
+matplotlib
+seaborn
+pandas
+numpy
+python-dotenv

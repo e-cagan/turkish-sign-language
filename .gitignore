@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS junk (opsiyonel ama önerilir)
+.vscode/
+.idea/
+.DS_Store
+
+# Virtual environment and YOLO
+.env
+venv/
+runs/
+dataset/
+weights/
+yolov8n.pt
+yolo26n.pt
