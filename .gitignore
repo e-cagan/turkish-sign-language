@@ -10,6 +10,7 @@ __pycache__/
 
 # Virtual environment and YOLO
 .env
+*.onnx
 venv/
 runs/
 dataset/

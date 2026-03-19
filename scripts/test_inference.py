@@ -14,7 +14,7 @@ if __name__ == '__main__':
     cap.set(propId=cv2.CAP_PROP_FRAME_HEIGHT, value=480.0)
 
     # Define the model
-    model = YOLO("runs/detect/runs/tsl-yolov8/weights/best.pt")
+    model = YOLO("runs/detect/runs/tsl-yolov8/weights/best.onnx")
 
     # Start the inference loop
     while cap.isOpened():

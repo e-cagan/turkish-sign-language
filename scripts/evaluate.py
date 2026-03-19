@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     # Load the model with trained weights
-    model = YOLO("runs/detect/runs/tsl-yolov8/weights/best.pt")
+    model = YOLO("runs/detect/runs/tsl-yolov8/weights/best.onnx")
 
     # Evaluate the model
     model.val(
