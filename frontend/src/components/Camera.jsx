@@ -133,7 +133,18 @@ export default function Camera() {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', animation: 'fadeIn 0.4s ease' }}>
       {/* Camera feed */}
       <div style={{ position: 'relative', borderRadius: 'var(--radius-lg)', overflow: 'hidden', background: '#000', border: '1px solid var(--border)' }}>
-        <video ref={videoRef} autoPlay muted playsInline style={{ display: 'none' }} />
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          playsInline
+          style={{
+            position: 'absolute',
+            width: 0,
+            height: 0,
+            opacity: 0,
+          }}
+        />
         <canvas ref={canvasRef} style={{ width: '100%', display: 'block', aspectRatio: '4/3' }} />
 
         {/* Scan line overlay */}

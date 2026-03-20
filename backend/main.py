@@ -14,7 +14,7 @@ import os
 
 
 # Load the model
-model = YOLO("runs/detect/runs/tsl-yolov8/weights/best.onnx")
+model = YOLO("/home/cagan/turkish-sign-language/runs/detect/runs/tsl-yolov8/weights/best.onnx")
 
 # Initialize the app
 app = FastAPI()
@@ -109,7 +109,7 @@ async def predict(file: UploadFile = File()):
     results = model.predict(
         source=frame,
         stream=False,
-        conf=0.30
+        conf=0.25
     )
 
     # Return the predictions as JSON format
@@ -139,7 +139,7 @@ async def websocket_endpoint(websocket: WebSocket):
             results = model.predict(
                 source=frame,
                 stream=False,
-                conf=0.30
+                conf=0.25
             )
 
             # Convert result to json format and send it to client
