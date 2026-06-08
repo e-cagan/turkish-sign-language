@@ -17,3 +17,16 @@ dataset/
 weights/
 yolov8s.pt
 yolo26n.pt
+
+data/
+*.pt
+*.pth
+*.onnx
+*.engine
+wandb/
+mlruns/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
